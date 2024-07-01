@@ -92,10 +92,10 @@ msg['received_timestamp'] = pd.to_datetime(msg['received_timestamp'], format='%m
 csv_file_path = 'messages_processed.csv'
 msg.to_csv(csv_file_path, index=False)
 # Define tus datos de conexión a MySQL
-MYSQL_USER = "admin"
-MYSQL_PASS = "F@c3b00k"
-MYSQL_HOST = "158.69.26.160"
-MYSQL_DB = "data_wa"
+MYSQL_USER = "root"
+MYSQL_PASS = ""
+MYSQL_HOST = "localhost"
+MYSQL_DB = "farfay4"
 
 # Reabre la conexión a MySQL
 mysql_con = mysql.connector.connect(
